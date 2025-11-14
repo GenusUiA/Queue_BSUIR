@@ -13,7 +13,7 @@ class UserRepository
     {
         $this->dbContext = $dbContext;
     }
-
+//
     public function Add(string $username, string $password, string $email, int $groupId, int $subgroupNumber)
     {
         // аналог PasswordHasher<User>

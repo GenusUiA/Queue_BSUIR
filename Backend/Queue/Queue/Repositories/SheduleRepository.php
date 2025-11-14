@@ -103,7 +103,7 @@ function loadScheduleForGroup(string $groupNumber, int $groupId, PDO $pdo): int
     foreach ($existingSubjects as $subj) {
         $subjectNameToId[$subj['name']] = $subj['id'];
     }
-
+//
     // Добавляем новые предметы
     foreach ($subjectNames as $name) {
         if (!isset($subjectNameToId[$name])) {
